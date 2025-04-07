@@ -39,7 +39,7 @@ window.onload = function (e) {
 					go_button.onclick = () => {
 						msgValue = msg_input.value
 						if(!msgValue) {
-							msgValue="maybe"
+							msgValue="call me maybe"
 							msg_input.value = msgValue
 						}
 						msg = myMessage(msgValue)
