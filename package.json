@@ -8,7 +8,7 @@
 	"dev": "NODE_ENV=development electron-forge start",
 	"test": "echo \"Error: no test specified\" && exit 1",
 	"package": "electron-forge package",
-	"build": "./build.sh",
+	"build": "rm -f out/*wasm && ./build.sh",
 	"make": "electron-forge make"
     },
     "build": {
