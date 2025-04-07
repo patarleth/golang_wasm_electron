@@ -7,7 +7,6 @@ import (
 
 var myMessageCounter int
 
-//go:wasmexport
 func myMessage(this js.Value, args []js.Value) interface{} {
 	if len(args) != 1 {
 		return js.ValueOf("Invalid number of arguments")
