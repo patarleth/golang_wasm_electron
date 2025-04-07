@@ -4,7 +4,7 @@
     "description": "golang to wasm test",
     "main": "main.js",
     "scripts": {
-	"start": "electron-forge start",
+	"start": "[ ! -e out/main.wasm ] && ./build.sh; electron-forge start",
 	"dev": "NODE_ENV=development electron-forge start",
 	"test": "echo \"Error: no test specified\" && exit 1",
 	"package": "electron-forge package",
