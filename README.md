@@ -12,9 +12,13 @@
 
 ### main.js
 
-On index.html load, attemp to read the .wasm file from out/
+On index.html load - attempt to read out/main.wasm file
 
-Create and send a "wasm_load" ipc message
+Create and send a "wasm_load" message to renderer.js using 
+    
+    win.webContents.send("wasm_load", wasmBinary)
+
+See renderer.js below for reasons :)
 
 ### renderer.js
 
