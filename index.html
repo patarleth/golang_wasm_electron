@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' app: 'unsafe-eval'; object-src 'self' app:;">
+    <!--<meta http-equiv="Content-Security-Policy" content="script-src 'self';" />-->
+    <meta http-equiv="X-Content-Security-Policy" content="script-src 'self'" />    
+    <title>HIDs gotta hid!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/uikit.min.css" />
+    <script src="js/wasm_exec.js"></script>
+    <script src="./js/uikit.min.js"></script>
+    <script src="./js/uikit-icons.min.js"></script>
+  </head>
+  <body class="uk-padding">
+    <h1>golang wasm test</h1>
+    <div class="uk-margin">
+      <input id="msg_input" class="uk-input" type="text" placeholder="Input" aria-label="Input">
+    </div>
+    <button uk-button uk-button-default id="go_button">go!</button>
+
+    <div id="msg_div" uk-alert></div>
+  </body>
+</html>
